@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      h1{color: gray;}
+      #one{
+        color:red;
+      }
+      .two{
+        color:blue;
+      }
+      #three{
+        color:green;
+        border:solid 1px green;
+        font-style: italic;
+      }
+      .four{
+        color:#9C27B0;;
+        border:solid 1px #9C27B0;;
+        font-style: italic;
+      }
+    </style>
+    <!--
+    범용 선택자 (*) 모든 것을 지칭 *{color:red;}
+    타입 선택자 h1{color:red;}
+    class 선택자 .one{color:red;}
+    id 선택자
+    class 는 중첩해서 사용 가능하나 id는 중첩 불가능
+    -->
+  </head>
+  <body>
+    <h1>선택자 연습</h1>
+    <a href="#one">1st</a>
+    <a href="#three">2nd</a>
+    <h2 id="one">1st</h2>
+    <p>one</p>
+    <p>one</p>
+    <p>one</p>
+    <p>one</p>
+    <p>one</p>
+    <h2 class="two">2nd</h2>
+    <p>two</p>
+    <p>two</p>
+    <p>two</p>
+    <p>two</p>
+    <p>two</p>
+    <h2 id="three">3nd</h2>
+    <h2 class="four">4nd</h2>
+  </body>
+</html>

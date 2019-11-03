@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      .box{
+        width: 200px;
+        height: 100px;
+        margin: 10px;
+        border: 3px solid black;
+      }
+      .input-check:checked ~ .box{
+        background: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <label for="input-check">체크하세요</label>
+    <input type="checkbox" class="input-check" id="input-check"> <!--label과 input은 보통 같이 쓰이는데 id 같이쓰면 접근성 good 어디를 클릭해도 됨-->
+    <div class="box">BOX</div>
+    <div class="container">
+      <div class="box">BOX</div>
+    </div>
+    <div class="box">BOX</div>
+
+    <!--.input-check ~ .box 의미는 동등한 클래스에 적용
+         +는 바로 다음 클래스-->
+  </body>
+</html>

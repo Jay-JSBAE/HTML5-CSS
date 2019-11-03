@@ -1,0 +1,29 @@
+.page-header{
+  padding: 1em;
+  background: lightgray;
+}
+.content-section{
+  display: inline-block;
+  vertical-align: top;
+  padding: 1em;
+  font-size: 1rem;
+  /*root em : root는 html이고 크기는 16px*/
+}
+.content-section-a{
+  width: calc(30% - 2em);
+  background: yellow;
+}
+.content-section-b{
+  width: calc(70% - 2em);
+  background: pink;
+}
+.page-footer{
+  padding: 1em;
+  background: green;
+}
+.content-container{
+  font-size: 0;
+}
+ /*섹션 a와 b의 공간을 없애주기 위해
+    이렇게 하면 자식섹션도 없어지기떄문에 자식섹션은 폰트 복구해줘야 함
+    자식섹션은 rem 으로 */

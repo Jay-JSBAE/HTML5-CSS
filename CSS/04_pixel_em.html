@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      .one{font-size: 32px;}
+      .two{font-size: 2em;}
+      .three{font-weight: normal;}
+      .four{font-size: 2em;}
+      div{font-size: 8px;}
+      /*em 바디의 기본 폰트 사이즈가 16px 그거의 2배니깐 32px
+      rem은 바디ㅌ의 영향  em은 div가 있을 경우 부모의 영향
+      그래서 div 는 8px 곱하기 2 해서 16픽셀이 됨*/
+      .box-one{
+        width: 50%;
+        height: 30vh; /*높이는 % 못씀 vh 내가 보이는 화면의 전체 높이의 30%*/
+        background-color: green;
+      }
+      .box-two{
+        width: 50px;
+        height: 100px;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <p>고정 크기 단위 : px, pt, in, cm, mm</p>
+    <p>가변 크기 단위 : em, rem, %</p>
+
+    <p class="one">hello css</p>
+    <p class="two">hello css</p>
+    <p class="three">hello css</p>
+    <div>
+      <p class="four">hello world</p>
+    </div>
+    <div class="box-one"></div>
+    <div class="box-two"></div>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>flex 적용 후</title>
+    <style>
+      /*flex 속성은 display*/
+      .container{
+        display: flex;
+        /*flex-direction: law;  => law(기본값)와 column*/
+        /*justify-content: flex-start; =>start, end, center, space-between, space-around*/
+        /*align-items: stretch; flex-start, flex-end, center*/
+        height: 80vh;
+        background : gray;
+      }
+      .item{
+        /*flex-grow: 1;
+        flex-basis: 0; 원래 컨텐츠가 차지하는 영역 기본값은 auto*/
+        flex:1; /*1로 넣으면 쫙 차게 늘어남*/
+        border : 3px solid black;
+        font-size : 3em;
+        background: white;
+      }
+      /* .item:nth-child(1) {flex-grow: 1;}
+      .item:nth-child(2) {flex-grow: 5;}
+      .item:nth-child(3) {flex-grow: 4;}
+      .item:nth-child(4) {flex-grow: 3;} */
+      /* .item:nth-child(5) {flex-grow: 2;} */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">AAA</div>
+      <div class="item">b</div>
+      <div class="item">CCCC</div>
+      <div class="item">DDD</div>
+      <div class="item">e</div>
+    </div>
+  </body>
+</html>
